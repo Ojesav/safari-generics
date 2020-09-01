@@ -10,5 +10,11 @@ public class UsePair {
 
     Pair<LocalDate> pld = new Pair<>(LocalDate.now(), LocalDate.now());
     LocalDate ld = pld.getLeft();
+
+//    Pair<int, int> pii = new Pair<>(1, 2);
+    Pair<Integer> pii = new Pair<>(1, 2); // "autoboxed"
+    pii.setLeft(99); // autoboxed
+    int x = pii.getRight(); // "auto-unboxing" :)
+
   }
 }

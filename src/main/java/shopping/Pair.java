@@ -1,8 +1,9 @@
 package shopping;
 
+// "Better" solution would be to use a command pattern
 public class Pair<E> {
-  private E left;
-  private E right;
+  E left;
+  E right;
 
   public Pair(E left, E right) {
     this.left = left;
